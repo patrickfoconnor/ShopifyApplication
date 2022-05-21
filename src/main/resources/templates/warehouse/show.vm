@@ -1,0 +1,54 @@
+#parse('templates/header.vm')
+
+<h2>Warehouse</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Address</td>
+        <td>$!warehouse.Address</td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td>$!warehouse.City</td>
+    </tr>
+    <tr>
+        <td>State</td>
+        <td>$!warehouse.State</td>
+    </tr>
+    <tr>
+        <td>Postal Code</td>
+        <td>$!warehouse.PostalCode</td>
+    </tr>
+    </tbody>
+</table>
+
+<h4>Inventory Items</h4>
+<table>
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Count</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach( $item in $warehouse.inventory)
+        <tr>
+            <td>$!item.ProductName</td>
+            <td>$!item.ProductCount</td>
+        </tr>
+        #end
+    </tbody>
+</table>
+
+<a href="/warehouse/$warehouse.WarehouseId/edit">[Edit Warehouse]</a>
+<a href="/warehouse/$warehouse.WarehouseId/delete">[Delete Warehouse]</a>
+
+
+#parse('templates/footer.vm')

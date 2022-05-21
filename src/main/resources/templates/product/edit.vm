@@ -1,0 +1,9 @@
+#parse('templates/header.vm')
+
+<h1>Product Edit</h1>
+
+<form action="/product/$product.productId" method="post">
+    #parse('templates/product/form.vm')
+</form>
+
+#parse('templates/footer.vm')

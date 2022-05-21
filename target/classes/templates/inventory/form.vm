@@ -1,0 +1,43 @@
+
+
+#if( $inventory.hasErrors() )
+    <div style="color:red">
+        <h4>Errors:</h4>
+        <ul>
+            #foreach( $error in $inventory.Errors )
+            <li>$error</li>
+            #end
+        </ul>
+    </div>
+#end
+
+<table>
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    #if  ($!inventory.ProductName.length() > 0)
+        <tr>
+            <td>Product Name</td>
+            <td>$!inventory.ProductName</td>
+        </tr>
+    #else
+        <tr>
+            <td>Product Name</td>
+            <td><input type="text" name="ProductName" value="$!inventory.ProductName"></td>
+        </tr>
+    #end
+    <tr>
+        <td>Warehouse Id</td>
+        <td><input type="text" name="WarehouseId" value="$!inventory.WarehouseId"></td>
+    </tr>
+    <tr>
+        <td>Product Count</td>
+        <td><input type="text" name="ProductCount" value="$!inventory.ProductCount"></td>
+    </tr>
+    </tbody>
+</table>
+<button>Save</button>

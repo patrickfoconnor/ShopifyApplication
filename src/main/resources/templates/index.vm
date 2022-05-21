@@ -1,0 +1,11 @@
+#parse('templates/header.vm')
+
+<p>Welcome to the logistics company inventory application</p>
+
+<p>You can use the navigation above to look at various entities in the inventory.db</p>
+
+<h3>Project Requirements</h3>
+
+
+
+#parse('templates/footer.vm')

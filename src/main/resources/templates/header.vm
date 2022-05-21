@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            max-width: 46em;
+            margin: 2em auto;
+            padding: 0 1em;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+    </style>
+    <title>Inventory Application</title>
+</head>
+<body>
+<main>
+
+    <h1>Logistic Inventory Tracking</h1>
+
+    <h4 style="color:green">$!message</h4>
+    <h4 style="color:red">$!error</h4>
+
+    <a href="/">Home</a> <br/>
+
+    <b>Business</b> - <a href="/warehouse">Warehouses</a>  |  <a href="/inventory">Inventories</a> | <a href="/product">Products</a>
+
+    <hr/>

@@ -1,0 +1,40 @@
+
+
+#if( $warehouse.hasErrors() )
+    <div style="color:red">
+        <h4>Errors:</h4>
+        <ul>
+            #foreach( $error in $warehouse.Errors )
+            <li>$error</li>
+            #end
+        </ul>
+    </div>
+#end
+
+<table>
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Address</td>
+        <td><input type="text" name="Address" value="$!warehouse.Address"></td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td><input type="text" name="City" value="$!warehouse.City"></td>
+    </tr>
+    <tr>
+        <td>State (Abbr)</td>
+        <td><input type="text" name="State" value="$!warehouse.State"></td>
+    </tr>
+    <tr>
+        <td>Postal Code</td>
+        <td><input type="text" name="PostalCode" value="$!warehouse.PostalCode"></td>
+    </tr>
+    </tbody>
+</table>
+<button>Save</button>

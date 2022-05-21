@@ -1,0 +1,30 @@
+#parse('templates/header.vm')
+
+<h3>Inventories </h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Inventory Id</th>
+        <th>Product Name</th>
+        <th>Product Count</th>
+        <th>Warehouse Id</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach( $inventory in $inventories )
+        <tr>
+            <td><a href="/inventory/$inventory.InventoryId">$inventory.InventoryId</a></td>
+            <td>$!inventory.ProductName</td>
+            <td>$!inventory.ProductCount</td>
+            <td>$!inventory.WarehouseId</td>
+        </tr>
+        #end
+    </tbody>
+</table>
+
+$web.pagingWidget($inventories)
+
+<a href="/inventory/new">[Create New Inventory]</a>
+
+#parse('templates/footer.vm')

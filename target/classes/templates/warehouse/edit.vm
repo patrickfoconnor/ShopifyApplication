@@ -1,0 +1,9 @@
+#parse('templates/header.vm')
+
+<h1>Warehouse Edit</h1>
+
+<form action="/warehouse/$warehouse.WarehouseId" method="post">
+    #parse('templates/warehouse/form.vm')
+</form>
+
+#parse('templates/footer.vm')

@@ -1,0 +1,9 @@
+#parse('templates/header.vm')
+
+<h1>Inventories</h1>
+
+<form action="/inventory/new" method="post">
+    #parse('templates/inventory/form.vm')
+</form>
+
+#parse('templates/footer.vm')

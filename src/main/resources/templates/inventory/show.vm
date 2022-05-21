@@ -1,0 +1,31 @@
+#parse('templates/header.vm')
+
+<h2>Inventory</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Warehouse Id</td>
+        <td>$!inventory.WarehouseId</td>
+    </tr>
+    <tr>
+        <td>Product Name</td>
+        <td>$!inventory.ProductName</td>
+    </tr>
+    <tr>
+        <td>Product Count</td>
+        <td>$!inventory.ProductCount</td>
+    </tr>
+    </tbody>
+</table>
+<a href="/inventory/$inventory.InventoryId/edit">[Edit Inventory Item]</a>
+<a href="/inventory/$inventory.InventoryId/delete">[Delete Inventory Item]</a>
+
+
+#parse('templates/footer.vm')

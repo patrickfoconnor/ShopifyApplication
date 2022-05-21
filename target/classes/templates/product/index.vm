@@ -1,0 +1,30 @@
+#parse('templates/header.vm')
+
+<h3>Products </h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Product ID</th>
+        <th>Unit Price</th>
+        <th>Weight</th>
+        <th>Product Name</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach( $product in $products )
+        <tr>
+            <td><a href="/product/$product.ProductId">$product.ProductId</a></td>
+            <td>$!product.UnitPrice</td>
+            <td>$!product.Weight</td>
+            <td>$!product.ProductName</td>
+        </tr>
+        #end
+    </tbody>
+</table>
+
+$web.pagingWidget($products)
+
+<a href="/product/new">[Create New Product]</a>
+
+#parse('templates/footer.vm')

@@ -1,0 +1,31 @@
+#parse('templates/header.vm')
+
+<h2>Product</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Product Name</td>
+        <td>$!product.ProductName</td>
+    </tr>
+    <tr>
+        <td>Unit Price</td>
+        <td>$!product.UnitPrice</td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td>$!product.Weight</td>
+    </tr>
+    </tbody>
+</table>
+<a href="/product/$product.productId/edit">[Edit Product]</a>
+<a href="/product/$product.ProductId/delete">[Delete Product]</a>
+
+
+#parse('templates/footer.vm')

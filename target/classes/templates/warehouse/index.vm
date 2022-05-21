@@ -1,0 +1,32 @@
+#parse('templates/header.vm')
+
+<h3>Warehouses </h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Warehouse ID</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Postal Code</th>
+    </tr>
+    </thead>
+    <tbody>
+        #foreach( $warehouse in $warehouses )
+        <tr>
+            <td><a href="/warehouse/$warehouse.WarehouseId">$warehouse.WarehouseId</a></td>
+            <td>$!warehouse.Address</td>
+            <td>$!warehouse.City</td>
+            <td>$!warehouse.State</td>
+            <td>$!warehouse.PostalCode</td>
+        </tr>
+        #end
+    </tbody>
+</table>
+
+$web.pagingWidget($warehouses)
+
+<a href="/warehouse/new">[Create New Warehouse]</a>
+
+#parse('templates/footer.vm')

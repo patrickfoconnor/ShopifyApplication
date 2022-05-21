@@ -1,0 +1,36 @@
+
+
+#if( $product.hasErrors() )
+    <div style="color:red">
+        <h4>Errors:</h4>
+        <ul>
+            #foreach( $error in $product.Errors )
+            <li>$error</li>
+            #end
+        </ul>
+    </div>
+#end
+
+<table>
+    <thead>
+    <tr>
+        <th>Property</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Product Name</td>
+        <td><input type="text" name="ProductName" value="$!product.ProductName"></td>
+    </tr>
+    <tr>
+        <td>Unit Price</td>
+        <td><input type="text" name="UnitPrice" value="$!product.UnitPrice"></td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td><input type="text" name="Weight" value="$!product.Weight"></td>
+    </tr>
+    </tbody>
+</table>
+<button>Save</button>
