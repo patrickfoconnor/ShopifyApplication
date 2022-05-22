@@ -1,6 +1,7 @@
 # Fall 2022 - Shopify
 Developer Intern Challenge Question
 link to repl https://replit.com/@PatrickOConnor3/ShopifyApplication-2?v=1
+Please view below for images if db is not connecting on replit still. Thank you
 
 ## Step 1. 
 ### TASK: Build an inventory tracking web application for a logistics company. We are looking for a web application that meets the requirements listed below, along with one additional feature, with the options also listed below.
@@ -39,6 +40,29 @@ Authentication and CSS/Design are not required and will not be considered during
 *Submit your Replit link for deploying in your application
 
 
+## A couple of images from the website running locally
+<h4>Warehouses</h4>
+<img src="src/main/resources/images/warehouseHome.png" alt="Warehouse Home" width="500" height="600">
+
+<img src="src/main/resources/images/warehouseDetails.png" alt="Warehouse Details" width="500" height="600">
+
+<img src="src/main/resources/images/createWarehouse.png" alt="Warehouse Create" width="500" height="600">
+
+<h4>Inventories</h4>
+
+<img src="src/main/resources/images/allInventory.png" alt="Inventory Home" width="500" height="600">
+
+<img src="src/main/resources/images/createInventory.png" alt="Inventory Create" width="500" height="600">
+
+<img src="src/main/resources/images/editInventory.png" alt="Inventory Edit" width="500" height="600">
+
+<h4>Products</h4>
+
+<img src="src/main/resources/images/allProducts.png" alt="Product Home" width="500" height="600">
+
+<img src="src/main/resources/images/productCreated.png" alt="Product Create" width="500" height="600">
+
+<img src="src/main/resources/images/productDeleted.png" alt="Product Delete" width="500" height="600">
 
 
 ### Project Resources
