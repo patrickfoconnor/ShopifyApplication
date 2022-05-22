@@ -4,6 +4,7 @@ import shopifyApplication.controller.*;
 import shopifyApplication.util.Web;
 
 import static spark.Spark.*;
+import spark.Filter;
 
 class Server {
 

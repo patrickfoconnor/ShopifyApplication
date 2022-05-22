@@ -5,6 +5,7 @@ import spark.Request;
 import spark.Response;
 import spark.Session;
 import spark.template.velocity.VelocityTemplateEngine;
+import spark.Filter;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -17,6 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 import static spark.Spark.*;
+
 
 public class Web {
 
