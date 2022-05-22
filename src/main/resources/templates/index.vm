@@ -5,7 +5,14 @@
 <p>You can use the navigation above to look at various entities in the inventory.db</p>
 
 <h3>SQLite and Replit Issue</h3>
-I am struggling to get my database to connect to the executable jar that is running. Hopefully this will get resolved shortly but I can in fact state that all CRUD operations do work but without db connection not much loads besides a stack trace on the pages.
+I am struggling to get my database to connect to the executable jar that is running. Hopefully this will get resolved shortly but I can in fact state that all CRUD operations do work but without db connection not much loads besides a stack trace on the pages. I have embedded some images from my local machine below where the application fully worked. Please view README.md for images if the pages are still not loading.
+
+<h4>Warehouses</h4>
+
+
+<h4>Inventories</h4>
+
+<h4>Products</h4>
 
 
 

@@ -1,4 +1,2 @@
-# running into an exception that im trying to work through. all code runs when cloned and ran on IntelliJ IDE
-
 language = "java10"
 run="sh main.sh"
