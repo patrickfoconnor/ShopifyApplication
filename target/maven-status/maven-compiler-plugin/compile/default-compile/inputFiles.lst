@@ -1,0 +1,11 @@
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/util/DB.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/model/Inventory.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/model/Model.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/controller/InventoryController.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/Server.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/controller/WarehouseController.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/util/Web.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/model/Warehouse.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/util/ResetDB.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/controller/ProductController.java
+/home/runner/ShopifyApplication-2/src/main/java/shopifyApplication/model/Product.java
